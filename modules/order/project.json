@@ -1,0 +1,26 @@
+{
+  "name": "order",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "modules/order/src",
+  "prefix": "cake-bake-ang",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "modules/order/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "modules/order/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "modules/order/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    }
+  }
+}

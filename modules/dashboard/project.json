@@ -1,0 +1,9 @@
+{
+  "name": "dashboard",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "modules/dashboard/src",
+  "prefix": "cake-bake-ang",
+  "tags": [],
+  "projectType": "library",
+  "targets": {}
+}
